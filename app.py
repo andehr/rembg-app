@@ -30,8 +30,11 @@ st.write("Upload an image in the sidebar to see the downloadable result below.")
 
 if image_upload is None:
     image_upload = "img/squirrel.jpeg"
+    loading_msg = "Processing default image..."
+else:
+    loading_msg = f"Processing your image {image_upload}"
 
-if image_upload:
+with st.spinner(loading_msg):
     col_orig, col_result = st.columns(2)
     image = open_image(image_upload)
     image_fixed = remove_bg(image)
