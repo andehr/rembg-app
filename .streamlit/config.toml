@@ -1,0 +1,29 @@
+[server]
+
+# The port where the server will listen for browser connections.
+# Default: 8501
+port = 8501
+
+# Max size, in megabytes, for files uploaded with the file_uploader.
+# Default: 200
+maxUploadSize = 1000
+
+[theme]
+
+# The preset Streamlit theme that your custom theme inherits from. One of "light" or "dark".
+# base =
+
+# Primary accent color for interactive elements.
+primaryColor = "#4498A3"
+
+# Background color for the main content area.
+# backgroundColor =
+
+# Background color used for the sidebar and most interactive widgets.
+# secondaryBackgroundColor =
+
+# Color used for almost all text.
+# textColor =
+
+# Font family for all text in the app, except code blocks. One of "sans serif", "serif", or "monospace".
+# font =
